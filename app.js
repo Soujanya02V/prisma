@@ -1,3 +1,4 @@
+#this prisma file converts code to mysql code 
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();

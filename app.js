@@ -21,7 +21,8 @@ const main = async ()=>{
     ],
 })
     console.log(User);*/
-    //only unique fields are used mentioned in the schema.prisma
+    //unique fields will be mentioned in schema,prisma file
+    
     const User = await prisma.User.findMany()
     const user = await prisma.User.findUnique({
         where:{id:3},
